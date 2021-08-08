@@ -6,34 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Login</title>
 </head>
 
 <body>
     <div class="wrap">
         <div class="banner">
+            <div class="options">
+                <button type="button" data-name="login" class="btn" data-place="banner">
+                    Iniciar sesión
+                </button>
+                <button type="button" class="facebook" data-name="facebook" data-place="banner"  class="btn">
+                    Iniciar sesión con facebook
+                    <span>*Opcion no disponible*</span>
+                </button>
+                <button type="button" data-name="register"  class="btn" data-place="banner">
+                    ¿No tienes cuenta?
+                </button>
+            </div>
         </div>
         <form class="form" action="" method="get" accept-charset="utf-8">
-            <div class="nav-form">
+            <div class="nav-form" id="nav-form-form">
                 <h1>Lorem</h1>
                 <p>Login y registro desarrollado con html, css y javascript</p>
                 <div class="options">
-                    <button type="button" data-name="login">
+                    <button type="button" data-name="login"  class="btn" data-place="nav-form">
                         Iniciar sesión
                     </button>
-                    <button type="button" class="facebook" data-name="facebook">
+                    <button type="button" class="facebook btn" data-name="facebook"  data-place="nav-form">
                         Iniciar sesión con facebook
                         <span>*Opcion no disponible*</span>
                     </button>
-                    <button type="button" data-name="register">
+                    <button type="button" data-name="register"  class="btn" data-place="nav-form">
                         ¿No tienes cuenta?
                     </button>
                 </div>
-                <button type="button" class="closed" data-name="closed">
+                <button type="button" class="closed btn" data-name="closed">
                     <i class='bx bx-x'></i>
                 </button>
             </div>
-            <div class="login">
+            <div class="login active-move">
                 <div class="wrap-input" data-name="Correo">
                     <input type="text" value="" />
                 </div>

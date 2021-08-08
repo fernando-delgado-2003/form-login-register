@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
  box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
 }
-body{
-    font-family: poppins;
+.banner{
+    display: none;
 }
 form{
     position: relative;
@@ -35,33 +38,40 @@ form{
     text-align: center;
     
 }
-.nav-form .options {
+.nav-form .options, 
+.banner .options {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
 }
-.nav-form .options button{
+.nav-form .options button,
+.banner .options button{
     border: none;
     padding: .7rem 1rem;
     border-radius: 3rem;
+    cursor: pointer;
 }
-.nav-form .options .facebook{
+.nav-form .options .facebook,
+.banner .options .facebook{
     background-color: #416BF3;
     color: #fff;
     margin: 1rem 0;
     position: relative;
 }
-.nav-form .options .facebook span{
+.nav-form .options .facebook span,
+.banner .options .facebook span{
     width: 100%;
     position: absolute;
     bottom: -17px;
     left: calc(50% - 50%);
     display: none;
 }
-.nav-form .options .facebook span.active{
+.nav-form .options .facebook span.active,
+.banner .options .facebook span.active{
     display: block;
 }
-.nav-form .options button:nth-child(3){
+.nav-form .options button:nth-child(3),
+.banner .options button:nth-child(3){
     color: #fff;
     background-color: transparent;
 }
@@ -133,7 +143,7 @@ input[type="submit"]{
     padding: .8rem 1.5rem;
     background-color: #2AD484;
     border: none;
-    margin: auto;
+    margin: 0 auto;
     border-radius: .3rem;
     color: #fff;
 }

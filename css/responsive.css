@@ -1,0 +1,56 @@
+@media (min-width: 450px){
+    .login, .register{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 676px){
+    .wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .wrap .banner{
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/1.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .login, .register {
+        padding: 0;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        transition: right 500ms;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: -100%;
+    }
+    .login.active-move,
+    .register.active-move{
+        display: flex;
+        right: 10%;
+        transition-delay: 500ms;
+
+    }
+    .nav-form{
+        background-image: none;
+        width: 50%;
+        position: static;
+        display: none;
+    }
+    .nav-form.active{
+        box-shadow: none;
+    }
+    .nav-form .closed{
+    }
+}
